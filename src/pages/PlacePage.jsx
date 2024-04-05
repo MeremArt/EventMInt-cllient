@@ -131,7 +131,7 @@ const PlacePage = () => {
     }
     setLoading(true);
     axios
-      .get(`http://localhost:4000/api/v1/ev/event/${id}`)
+      .get(`https://eventmint-server.onrender.com/api/v1/ev/event/${id}`)
       .then((response) => {
         setPlace(response.data);
         setLoading(false);
