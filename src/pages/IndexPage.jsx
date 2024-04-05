@@ -11,7 +11,7 @@ const IndexPage = () => {
   const [places, setPlaces] = useState([]);
   const [walletAddress, setWalletAddress] = useState("");
   useEffect(() => {
-    axios.get("http://localhost:4000/api/v1/ev/place").then((response) => {
+    axios.get("https://eventmint-server.onrender.com/api/v1/ev/place").then((response) => {
       setPlaces(response.data);
     });
   }, []);

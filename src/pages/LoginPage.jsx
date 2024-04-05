@@ -24,7 +24,7 @@ const LoginPage = () => {
     ev.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/ev/login",
+        "https://eventmint-server.onrender.com/api/v1/ev/login",
         { email, password }
       );
 
