@@ -7,9 +7,9 @@ const Success = () => {
 
   useEffect(() => {
     const texts = [
-      "This is the first text element.",
-      "This is the second text element.",
-      "This is the third text element.",
+      "Thanks for your purchase,😊 ",
+      "Hope you come again",
+      "Check out chat features",
     ];
 
     const interval = setInterval(() => {
@@ -45,7 +45,7 @@ const Success = () => {
           {" "}
           Chat with Event Attendees
         </button>
-        <p className="mt-4">{currentText}</p>
+        <p className="mt-4 text-white">{currentText}</p>
       </center>
     </>
   );

@@ -5,9 +5,11 @@ import axios from "axios";
 const PlacesPage = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
-    axios.get(`http://localhost:4000/api/v1/ev/user-event`).then(({ data }) => {
-      setPlaces(data);
-    });
+    axios
+      .get(`https://eventmint-server.onrender.com/api/v1/ev/user-event`)
+      .then(({ data }) => {
+        setPlaces(data);
+      });
   }, []);
   const { action } = useParams();
 

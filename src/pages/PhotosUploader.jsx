@@ -6,7 +6,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
   async function addPhotoByLink(ev) {
     ev.preventDefault();
     const { data: filename } = await axios.post(
-      `http://localhost:4000/api/v1/ev/upload-by-link`,
+      `https://eventmint-server.onrender.com/api/v1/ev/upload-by-link`,
       {
         link: photoLink,
       }
@@ -23,9 +23,13 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
     }
 
     axios
-      .post(`http://localhost:4000/api/v1/ev/upload-file`, data, {
-        headers: { "Content-type": "multipart/form-data" },
-      })
+      .post(
+        `https://eventmint-server.onrender.com/api/v1/ev/upload-file`,
+        data,
+        {
+          headers: { "Content-type": "multipart/form-data" },
+        }
+      )
       .then((response) => {
         const { data: filenames } = response;
         onChange([...addedPhotos, ...filenames]);
@@ -47,7 +51,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
       <div className="h-32 flex relative" key={index}>
         <img
           className="rounded-2xl w-full object-cover"
-          src={`http://localhost:4000/api/v1/ev/upload/${link}`}
+          src={`https://eventmint-server.onrender.com/api/v1/ev/upload/${link}`}
           alt={`Event Image ${index}`}
         />
         <button

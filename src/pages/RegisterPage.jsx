@@ -9,7 +9,7 @@ const RegisterPage = () => {
     ev.preventDefault();
 
     try {
-      axios.post(" http://localhost:4000/api/v1/ev/register", {
+      axios.post("https://eventmint-server.onrender.com/api/v1/ev/register", {
         name,
         email,
         password,

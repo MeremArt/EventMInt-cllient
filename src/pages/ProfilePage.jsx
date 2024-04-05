@@ -15,7 +15,7 @@ const ProfilePage = () => {
   }
 
   async function logout() {
-    await axios.post(`http://localhost:4000/api/v1/ev/logout`);
+    await axios.post(`https://eventmint-server.onrender.com/v1/ev/logout`);
 
     sethomepage(`/`);
     setUser(null);

@@ -79,9 +79,12 @@ const PlacePage = () => {
         setRedirect(true); // Set redirect state to true upon successful payment
         get_bal(connection, publicKey);
 
-        const res = axios.post("http://localhost:4000/api/v1/ev/getNFT", {
-          pubkey: publicKey.toString(),
-        });
+        const res = axios.post(
+          "https://eventmint-server.onrender.com/api/v1/ev/getNFT",
+          {
+            pubkey: publicKey.toString(),
+          }
+        );
         console.log(res.data);
         if (res.data.status === 200) {
           console.log("Ok to go bro");
