@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  @apply w-full border my-2 py-2 px-3 rounded-2xl;
+}
+
+textarea {
+  height: 140px;
+  width: 100%;
+  background: none;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+button {
+  @apply bg-index;
+}
+
+button.primary {
+  background-color: #acf600;
+  @apply bg-index p-2 w-full rounded-2xl;
+}
+
+/* App.css */
+.buttons-inactive .wallet-adapter-button,
+.buttons-inactive .wallet-adapter-button-trigger {
+  pointer-events: none; /* Disable pointer events */
+  opacity: 0.5; /* Reduce opacity to visually indicate inactivity */
+}
+.wallet-adapter-button-trigger {
+  background-color: none;
+}
+
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-77 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-77:disabled {
+  cursor: default;
+}
+.btn-77:-moz-focusring {
+  outline: auto;
+}
+.btn-77 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-77 [hidden] {
+  display: none;
+}
+.btn-77 {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  border: 1px solid;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2em transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+
+.btn-57,
+.btn-57 *,
+.btn-57 :after,
+.btn-57 :before,
+.btn-57:after,
+.btn-57:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-57 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-57:disabled {
+  cursor: default;
+}
+.btn-57:-moz-focusring {
+  outline: auto;
+}
+.btn-57 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-57 [hidden] {
+  display: none;
+}
+.btn-57 {
+  background: none;
+  border: 3px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #acf600;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 20px 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-57:before {
+  background: #fff;
+  border-radius: 999px;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translate(10px, 10px);
+  transition: transform 0.2s;
+  z-index: -1;
+}
+.btn-57:hover:before {
+  transform: translate(0);
+}

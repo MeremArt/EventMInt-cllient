@@ -1,0 +1,8 @@
+body {
+  background-color: #27272a;
+}
+.buttons-inactive .wallet-adapter-button,
+.buttons-inactive .wallet-adapter-button-trigger {
+  pointer-events: none; /* Disable pointer events */
+  opacity: 0.5; /* Reduce opacity to visually indicate inactivity */
+}
