@@ -98,8 +98,8 @@ const PlacePage = () => {
 
   useEffect(() => {
     if (redirect) {
+      return <Navigate to="/success" />;
       // Redirect to success page when redirect state is true
-      window.location.href = "/success";
     }
   }, [redirect]);
 
