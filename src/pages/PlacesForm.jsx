@@ -75,26 +75,32 @@ const PlacesForm = () => {
 
     if (id) {
       //update
-      await axios.put(`http://localhost:4000/api/v1/ev/update-place`, {
-        id,
-        ...placeData,
-      });
+      await axios.put(
+        `https://eventmint-server.onrender.com/api/v1/ev/update-place`,
+        {
+          id,
+          ...placeData,
+        }
+      );
       console.log("Posting placeData:", placeData);
       setRedirectPlace(true);
       alert("id present");
       console.log(id);
     } else {
       //new place
-      await axios.post(`http://localhost:4000/api/v1/ev/upload-place`, {
-        title,
-        description,
-        perks,
-        address,
-        extraInfo,
-        checkIn,
-        checkOut,
-        maxGuests,
-      });
+      await axios.post(
+        `https://eventmint-server.onrender.com/api/v1/ev/upload-place`,
+        {
+          title,
+          description,
+          perks,
+          address,
+          extraInfo,
+          checkIn,
+          checkOut,
+          maxGuests,
+        }
+      );
       setRedirectPlace(true);
       alert("id not present");
     }
