@@ -122,7 +122,7 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            {!!user && <div>{user.name}</div>}
+            {!!user && <div>{user.name} : Welcome</div>}
           </Link>
         </header>
       </main>
