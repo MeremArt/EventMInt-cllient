@@ -10,10 +10,12 @@ export function UserContextProvider({ children }) {
   const [prod, setProd] = useState([]);
   useEffect(() => {
     if (!user) {
-      axios.get("http://localhost:4000/api/v1/ev/user").then(({ data }) => {
-        setUser(data);
-        setReady(true);
-      });
+      axios
+        .get("https://eventmint-server.onrender.com/api/v1/ev/user")
+        .then(({ data }) => {
+          setUser(data);
+          setReady(true);
+        });
     }
   }, []);
   return (
